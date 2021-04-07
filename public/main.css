@@ -1,6 +1,5 @@
 :root {
-    font-family: 'New Tegomin', serif;
-    background-image: url(/static/bg.png);
+    background-image: url(/static/cyber.jpg);
     background-size: cover;
 }
 
@@ -10,21 +9,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.wrapper {
-    max-width: 800px;
-    margin: 50px auto;
-}
-
 .logo {
-    text-align: center;
+    margin-left: 200px;
     font-size: 4rem;
+    color: rgb(170, 214, 216);
 }
 
 .form {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    color: cadetblue;
 }
 
 .input {
@@ -33,7 +28,7 @@
     margin: 15px;
     margin-left: 80px;
     font-size: 1.5rem;
-    width: 80%;
+    width: 50%;
     border: 1px solid #ccc;
     border-radius: 10px;
     font-family: inherit;
@@ -43,19 +38,24 @@
     display: inline-block;
     padding: 10px 20px;
     font-size: 1.5rem;
-    width: 25%;
-    margin-left: 300px;
+    width: 20%;
+    margin-left: 490px;
     border: none;
     border-radius: 8px;
     background: rgb(42, 151, 165);
     color: #ccc;
 }
+.btn:hover {
+    color: tomato;
+}
 
 .todos {
+    width: 50%;
     margin-top: 25px;
+    margin-left: 80px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    padding: 10px;
+    padding: 5px;
 }
 
 .todo {
@@ -65,6 +65,7 @@
     padding: 10px;
     font-size: 1.5rem;
     border-bottom: 1px dotted black;
+    color: white;
 }
 
 .todo:last-child {
@@ -72,26 +73,28 @@
 }
 
 .todo:hover {
-    background: #eee;
-}
-
-.error,
-.success {
-    text-align: center;
-    font-size: 1.4rem;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 15px;
+    background:cadetblue;
 }
 
 .error {
-    color: chocolate;
-    border-color: red;
-
+ max-width: 9%;
+ margin-left: 100px;
+ padding: 0 20px 0 20px;
+ font-size: 1.4rem;
+ border: 1px solid #ff6347;
+ border-radius: 5px;
+ color: red;
 }
+
 .success {
-    color: green;
-    border-color: green;
+ max-width: 9%;
+ margin-left: 100px;
+ padding: 0 20px 0 20px;
+ font-size: 1.4rem;
+ border: 1px solid green;
+ border-radius: 5px;
+ color: #fff;
+ border-color: #fff;
 }
 
 .delete {
@@ -106,9 +109,9 @@
 .done,
 .undone {
     text-decoration: none;
-    color: darkblue;
+    color: #ccc;
 }
 .done {
-    color: darkblue;
+    color: #ccc;
     text-decoration: line-through;
 }

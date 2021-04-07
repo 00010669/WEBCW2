@@ -5,13 +5,13 @@ block number1
         p.error Please fill in the input
 
     if success 
-        p.success Well done 
+        p.success Saved! 
     
     if deleted
-        p.success Deleted
+        p.error Deleted
     form(action = "/add" method='POST')
-        input.input(type="text" placeholder="Add your tasks' name" name="todo")
-        textarea.input(type="text" placeholder="Add your tasks' description for a day" name="description")
+        input.input(type="text" placeholder="Enter your task" name="todo")
+        textarea.input(type="text" placeholder="Task description" name="description")
 
         button.btn Add 
 
